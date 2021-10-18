@@ -1,5 +1,13 @@
 # Rust iterators bench
 
+There's often no point in writing a manually-unrolled loop, since Rust's iterators in most cases will be faster than a direct loop.
+
+Sometimes it's worth writing AVX2 code or even inline assembly, but it has to be a really hot path for this to make sense. With Rust, the AVX2 code is only `1.8 times` faster than the iterator, and a lot less maintainable.
+
+## Benchmarking library
+
+[criterion](https://github.com/bheisler/criterion.rs)
+
 ## Results
 
 ```
