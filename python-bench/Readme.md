@@ -7,8 +7,8 @@
 ## Results
 |             |           |
 |-------------|-----------|
-| Iterator    | 1 446 320 |
-| Direct loop | 4 308 070 |
+| Iterator    | 4 308 070 |
+| Direct loop | 1 446 320 |
 
 ## Requirements
 
