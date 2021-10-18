@@ -1,5 +1,9 @@
 # C++ iterators bench
 
+C++ results are quite interesting. Direct loop is the fastest in current competition. In fact, it's so fast that the difference between direct loop and AVX2 is only `16%`.
+\
+However, iterators (ranges) are much slower than in Rust.
+
 ## Benchmarking library
 
 [benchmark](https://github.com/google/benchmark)
