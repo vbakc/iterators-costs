@@ -1,5 +1,11 @@
 # Java iterator bench
 
+There is no built-in `zip` function in Java, so we are using either handcoded one or from [Google Guava](https://github.com/google/guava)
+
+## Benchmarking library
+
+[JMH](https://github.com/openjdk/jmh)
+
 ## Results
 
 ```
