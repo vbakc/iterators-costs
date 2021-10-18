@@ -1,0 +1,7 @@
+[requires]
+benchmark/1.5.3
+range-v3/0.11.0
+gtest/1.11.0
+
+[generators]
+cmake
