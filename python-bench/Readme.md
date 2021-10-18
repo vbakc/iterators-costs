@@ -1,5 +1,9 @@
 # Python enumerator bench
 
+## Benchmarking library
+
+[timeti2](https://github.com/atu4403/timeit2)
+
 ## Results
 |             |           |
 |-------------|-----------|
