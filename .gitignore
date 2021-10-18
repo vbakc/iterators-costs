@@ -1,0 +1,15 @@
+# Build artifacts
+target/
+
+cpp-bench/build/
+
+csharp-bench/bin/
+csharp-bench/obj/
+csharp-bench/BenchmarkDotNet.Artifacts/
+
+java-bench/target/
+
+# IDE configs
+.vscode/
+.vs/
+java-bench/.idea/
