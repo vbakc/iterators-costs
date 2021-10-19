@@ -4,6 +4,17 @@ There's often no point in writing a manually-unrolled loop, since Rust's iterato
 
 Sometimes it's worth writing AVX2 code or even inline assembly, but it has to be a really hot path for this to make sense. With Rust, the AVX2 code is only `1.8 times` faster than the iterator, and a lot less maintainable.
 
+Rust is fast for a few reasons, including:
+
+- iterators are monomorphic and statically dispatched with no heap allocation
+- the actual iterator code is optimised away
+- the Rust compiler and LLVM backend are *very* good at the classic optimisations, and
+- it will happily use SIMD instructions automatically
+
+You'll notice you pay for these benefits at compile time -- it takes a while for the compiler to do all this work.
+
+Of course, this is with `target-cpu=native` for Rust to enable AVX2 instructions on my machine. This is enabled in the [.cargo/config](.cargo/config) file.
+
 ## Benchmarking library
 
 [criterion](https://github.com/bheisler/criterion.rs)
